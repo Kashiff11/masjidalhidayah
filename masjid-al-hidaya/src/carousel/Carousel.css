@@ -1,3 +1,7 @@
 #slide1 {
   background-color: black;
 }
+
+.carousel-caption {
+  font-family: 'Shippori Mincho B1', serif;
+}

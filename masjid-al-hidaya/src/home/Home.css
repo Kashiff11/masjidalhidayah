@@ -7,11 +7,9 @@
 
 #carouselContainerLeft {
   display: flex;
-
   height: 70vh;
   width: 30vw;
   font-family: 'Shippori Mincho B1', serif;
-  
 }
 
 #carouselContainerRight {
@@ -26,5 +24,11 @@
 #introBlurb{
   margin: auto auto;
   color: rgb(0, 51, 69);
-  font-size: 2em;
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+#prayersContainer {
+  height: 50vh;
+  background-image: url(../images/mh8.jpg);
 }
