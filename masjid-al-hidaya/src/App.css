@@ -11,19 +11,19 @@
 
 .logoPic {
   width: 5vw;
-  min-width: 100px;
+  min-width: 50px;
 }
 
 .masjidName {
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: 'Shippori Mincho B1', serif;
 }
 
 .navbarChoice {
   font-family: 'Shippori Mincho B1', serif;
   color: white;
-  margin: 0 5vw;
-  font-size: 1.3em;
+  margin-left: 5vw;
+  font-size: .9em;
 }
 
 .navbarChoice:hover {

@@ -45,6 +45,11 @@ function App() {
                 <h5 className="navbarChoice">Donations</h5>
               </Nav.Link>
             </div>
+            <div className="linkContainer">
+              <Nav.Link to="/">
+                <h5 className="navbarChoice">Contact Us</h5>
+              </Nav.Link>
+            </div>
           </Nav>  
         </Navbar.Collapse>
       </Navbar>

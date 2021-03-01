@@ -36,3 +36,8 @@
   height: 50vh;
   background-image: url(../images/mh8.jpg);
 }
+
+#activitiesContainer {
+  height: 60vh;
+  background-color:  rgb(223,223,223);;
+}

@@ -9,68 +9,68 @@ export default function Prayers() {
       <div id="subPrayers">
         <div className="individualSalah">
           <div className="prayerName">
-            <h1>Fajr</h1>
+            <h2>Fajr</h2>
           </div>
           <div className="prayerDescription">
-            <h4>Adhaan</h4>
-            <h2>5:00AM</h2>
-            <h4>Iqaamah</h4>
-            <h2>5:20AM</h2>
+            <h5>Adhaan</h5>
+            <h3>5:00AM</h3>
+            <h5>Iqaamah</h5>
+            <h3>5:20AM</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h1>Dhuhr</h1>
+            <h2>Dhuhr</h2>
           </div>
           <div className="prayerDescription">
-            <h4>Adhaan</h4>
-            <h2>5:00AM</h2>
-            <h4>Iqaamah</h4>
-            <h2>5:20AM</h2>
+            <h5>Adhaan</h5>
+            <h3>5:00AM</h3>
+            <h5>Iqaamah</h5>
+            <h3>5:20AM</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h1>'Asr</h1>
+            <h2>'Asr</h2>
           </div>
           <div className="prayerDescription">
-            <h4>Adhaan</h4>
-            <h2>5:00AM</h2>
-            <h4>Iqaamah</h4>
-            <h2>5:20AM</h2>
+            <h5>Adhaan</h5>
+            <h3>5:00AM</h3>
+            <h5>Iqaamah</h5>
+            <h3>5:20AM</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h1>Maghrib</h1>
+            <h2>Maghrib</h2>
           </div>
           <div className="prayerDescription">
-            <h4>Adhaan</h4>
-            <h2>5:00AM</h2>
-            <h4>Iqaamah</h4>
-            <h2>5:20AM</h2>
+            <h5>Adhaan</h5>
+            <h3>5:00AM</h3>
+            <h5>Iqaamah</h5>
+            <h3>5:20AM</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h1>'Isha</h1>
+            <h2>'Isha</h2>
           </div>
           <div className="prayerDescription">
-            <h4>Adhaan</h4>
-            <h2>5:00AM</h2>
-            <h4>Iqaamah</h4>
-            <h2>5:20AM</h2>
+            <h5>Adhaan</h5>
+            <h3>5:00AM</h3>
+            <h5>Iqaamah</h5>
+            <h3>5:20AM</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h1>Jumu'ah</h1>
+            <h2>Jumu'ah</h2>
           </div>
           <div className="prayerDescription">
-            <h4>Adhaan</h4>
-            <h2>5:00AM</h2>
-            <h4>Iqaamah</h4>
-            <h2>5:20AM</h2>
+            <h5>Adhaan</h5>
+            <h3>5:00AM</h3>
+            <h5>Iqaamah</h5>
+            <h3>5:20AM</h3>
           </div>
         </div>
       </div>
