@@ -27,22 +27,22 @@ function App() {
           <Nav className="mr-auto">
             <div className="linkContainer">
               <Nav.Link to="/">
-                <h5>Home</h5>
+                <h5 className="navbarChoice">Home</h5>
               </Nav.Link>
             </div>
             <div className="linkContainer">
               <Nav.Link to="/">
-                <h5>Lessons</h5>
+                <h5 className="navbarChoice">Lessons</h5>
               </Nav.Link>
             </div>
             <div className="linkContainer">
               <Nav.Link to="/">
-                <h5>Masjid</h5>
+                <h5 className="navbarChoice">Masjid</h5>
               </Nav.Link>
             </div>
             <div className="linkContainer">
               <Nav.Link to="/">
-                <h5>Donations</h5>
+                <h5 className="navbarChoice">Donations</h5>
               </Nav.Link>
             </div>
           </Nav>  
