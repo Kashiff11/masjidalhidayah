@@ -4,12 +4,12 @@ export default function Prayers() {
   return (
     <div id="mainPrayers">
       <div id="prayerTitle">
-        <h1>Salah Timings</h1>
+        <h3>Salah Timings</h3>
       </div>
       <div id="subPrayers">
         <div className="individualSalah">
           <div className="prayerName">
-            <h2>Fajr</h2>
+            <h3>Fajr</h3>
           </div>
           <div className="prayerDescription">
             <h5>Adhaan</h5>
@@ -20,7 +20,7 @@ export default function Prayers() {
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h2>Dhuhr</h2>
+            <h3>Dhuhr</h3>
           </div>
           <div className="prayerDescription">
             <h5>Adhaan</h5>
@@ -31,7 +31,7 @@ export default function Prayers() {
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h2>'Asr</h2>
+            <h3>'Asr</h3>
           </div>
           <div className="prayerDescription">
             <h5>Adhaan</h5>
@@ -42,7 +42,7 @@ export default function Prayers() {
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h2>Maghrib</h2>
+            <h3>Maghrib</h3>
           </div>
           <div className="prayerDescription">
             <h5>Adhaan</h5>
@@ -53,7 +53,7 @@ export default function Prayers() {
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h2>'Isha</h2>
+            <h3>'Isha</h3>
           </div>
           <div className="prayerDescription">
             <h5>Adhaan</h5>
@@ -64,7 +64,7 @@ export default function Prayers() {
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h2>Jumu'ah</h2>
+            <h3>Jumu'ah</h3>
           </div>
           <div className="prayerDescription">
             <h5>Adhaan</h5>
