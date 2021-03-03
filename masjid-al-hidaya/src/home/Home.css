@@ -7,24 +7,37 @@
 
 #carouselContainerLeft {
   display: flex;
-
   height: 70vh;
-  width: 30vw;
+  width: 35vw;
   font-family: 'Shippori Mincho B1', serif;
-  
+  background-image: url(../images/mh3.png);
+  background-size:100%;
+  background-repeat: none;
 }
 
 #carouselContainerRight {
   height: 70vh;
-  width: 70vw;
+  width: 65vw;
 }
 
 #masjidBlurb {
-  font-size: 2.5em;
+  font-size: 2.6em;
+  font-weight: bolder;
 }
 
 #introBlurb{
   margin: auto auto;
   color: rgb(0, 51, 69);
-  font-size: 2em;
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+#prayersContainer {
+  height: 50vh;
+  background-image: url(../images/mh8.jpg);
+}
+
+#activitiesContainer {
+  height: 160vh;
+  background: rgb(223,223,223)
 }

@@ -22,14 +22,14 @@ export default function ControlledCarousel() {
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <Image
-          
           src={mh4}
           alt="First slide"
           style={myStyle}
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className="slideTitle">Our Creed</h3>
+          <p className="slideText">We believe and affirm all of what Allah the Exalted, and His Messenger, peace and blessings
+            be upon him have afirmed in the Quran and the Sunnah (prophetic traditions).</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

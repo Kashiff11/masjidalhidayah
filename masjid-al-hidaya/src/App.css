@@ -4,12 +4,32 @@
   text-align: center;
 }
 
+.masjidLogo {
+  display: flex;
+  flex-direction: column;
+}
+
 .logoPic {
-  width: 7vw;
-  min-width: 150px;
+  width: 5vw;
+  min-width: 50px;
 }
 
 .masjidName {
-  font-size: 2.0em;
+  font-size: 1em;
   font-family: 'Shippori Mincho B1', serif;
+}
+
+.navbarChoice {
+  font-family: 'Shippori Mincho B1', serif;
+  color: white;
+  margin-left: 5vw;
+  font-size: .9em;
+}
+
+.navbarChoice:hover {
+  font-weight: bold;
+}
+
+.Navbar {
+  position: absolute;
 }

@@ -15,56 +15,44 @@ import mh3 from './images/mh3.png';
 
 
 function App() {
+
   return (
     <div className="App">
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <div className="masjidLogo">
-          <Navbar.Brand><img src={mh3} className="logoPic"/></Navbar.Brand>
+          <Navbar.Brand><img src={mh3} className="logoPic" /></Navbar.Brand>
+          <Navbar.Brand><h1 className="masjidName">Masjid al-Hidaayah</h1></Navbar.Brand>
         </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <div className="linkContainer">
-              <Link to="/">
-                <IconContext.Provider value={{ color: "white", size: "25" }}>
-                  <ImHome style={{ marginLeft: 70 }}/>
-                </IconContext.Provider>
-              </Link>
+              <Nav.Link to="/">
+                <h5 className="navbarChoice">Home</h5>
+              </Nav.Link>
             </div>
             <div className="linkContainer">
-              <Link to="lessons">
-                <IconContext.Provider value={{ color: "white", size: "25" }}>
-                  <FaBookReader style={{ marginLeft: 80 }}/>
-                </IconContext.Provider>
-              </Link>
+              <Nav.Link to="/">
+                <h5 className="navbarChoice">Lessons</h5>
+              </Nav.Link>
             </div>
             <div className="linkContainer">
-              <Link to="lessons">
-                <IconContext.Provider value={{ color: "white", size: "25" }}>
-                  <FaMosque style={{ marginLeft: 80 }}/>
-                </IconContext.Provider>
-              </Link>
+              <Nav.Link to="/">
+                <h5 className="navbarChoice">Masjid</h5>
+              </Nav.Link>
             </div>
             <div className="linkContainer">
-              <Link to="donations">
-                <IconContext.Provider value={{ color: "white", size: "25"}}>
-                  <RiMoneyDollarCircleFill style={{ marginLeft: 80 }} />
-                </IconContext.Provider>
-              </Link>
-              <Link to="donations">
-                <IconContext.Provider value={{ color: "white", size: "25"}}>
-                  <SiTwitter style={{ marginLeft: 80 }}/>
-                </IconContext.Provider>
-              </Link>
-              <Link to="donations">
-                <IconContext.Provider value={{ color: "white", size: "25"}}>
-                  <RiInstagramFill style={{ marginLeft: 80 }}/>
-                </IconContext.Provider>
-              </Link>
+              <Nav.Link to="/">
+                <h5 className="navbarChoice">Donations</h5>
+              </Nav.Link>
+            </div>
+            <div className="linkContainer">
+              <Nav.Link to="/">
+                <h5 className="navbarChoice">Contact Us</h5>
+              </Nav.Link>
             </div>
           </Nav>  
         </Navbar.Collapse>
-        <Navbar.Brand><h1 className="masjidName">Masjid al-Hidaayah</h1></Navbar.Brand>
       </Navbar>
       <Switch>
         <Route exact path="/"><Home /></Route>
