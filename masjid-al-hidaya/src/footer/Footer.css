@@ -1,0 +1,37 @@
+.footerContainer {
+  width: 80%;
+  height: 100%;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  margin: auto;
+  color: white;
+}
+
+.mainLinksContainer {
+  height: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.linksContainer {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.columnHeading {
+  margin-bottom: 10%;
+}
+
+#addressColumn {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5%;
+}
+
+.copyrightsContainer {
+  display: flex;
+  flex-direction: row;
+  height: 15%;
+  justify-content: center;
+}
