@@ -21,7 +21,6 @@ function App() {
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <div className="masjidLogo">
           <Navbar.Brand><img src={mh3} className="logoPic" /></Navbar.Brand>
-          <Navbar.Brand><h1 className="masjidName">Masjid al-Hidaayah</h1></Navbar.Brand>
         </div>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
