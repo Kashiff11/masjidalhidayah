@@ -29,6 +29,6 @@
 }
 
 #footerContainer {
-  height: 40vh;
+  height: min-content;
   background: rgb(0, 51, 69)
 }

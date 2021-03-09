@@ -4,6 +4,7 @@ import { GoLocation } from 'react-icons/go';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FiTwitter } from 'react-icons/fi';
 import { AiOutlineFacebook } from 'react-icons/ai';
+import { FiExternalLink } from 'react-icons/fi';
 
 export default function Footer() {
   
@@ -14,12 +15,24 @@ export default function Footer() {
       <div className = "mainLinksContainer">
         <div className="linksContainer">
           <span className="columnHeading">QUICK LINKS</span>
+          <div id="addressColumn">
+            <FiExternalLink />
+            <h5 className='footerContent'>www.germantownmasjid.com</h5>
+          </div>
+          <div id="addressColumn">
+            <FiExternalLink />
+            <h5 className='footerContent'>www.salafipubs.com</h5>
+          </div>
+          <div id="addressColumn">
+            <FiExternalLink />
+            <h5 className='footerContent'>www.salafisounds.com</h5>
+          </div>
         </div>
         <div className="linksContainer">
           <span className="columnHeading">ADDRESS</span>
           <div id="addressColumn">
             <GoLocation />
-            <h5>Meadows Park Center <br />
+            <h5 className='footerContent'>Meadows Park Center <br />
             6600 Security Blvd. <br />
             Woodlawn, MD 21207</h5>
           </div>
@@ -28,24 +41,19 @@ export default function Footer() {
           <span className="columnHeading">CONTACT US</span>
           <div id="addressColumn">
             <AiOutlineMail />
-            <h5>Admin@MasjidalHidaayah.com</h5>
+            <h5 className='footerContent'>Admin@MasjidalHidaayah.com</h5>
           </div>
         </div>
         <div className="linksContainer">
           <span className="columnHeading">FOLLOW US</span>
           <div id="addressColumn">
-            <FiTwitter />
-            <h5>@MasjidHidaayah</h5>
-          </div>
-          <div id="addressColumn">
-            <AiOutlineFacebook size={ '1.3rem' }/>
-            <h5>Masjid al-Hidaayah</h5>
+            <FiTwitter size={ '1.5rem' }/>
           </div>
         </div>
       </div>
       <div className = "copyrightsContainer">
-        <BiCopyright/>
-        <h5> 2021 KKhanDev LLC - All Rights Reserved</h5>
+        <BiCopyright size={ '1.5rem' }/>
+        <h5 className='footerContent' > 2021 KKhanDev LLC - All Rights Reserved</h5>
       </div>
     </div>
   )

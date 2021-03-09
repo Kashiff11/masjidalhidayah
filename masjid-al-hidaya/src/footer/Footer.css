@@ -1,6 +1,6 @@
 .footerContainer {
-  width: 80%;
-  height: 100%;
+  width: 90%;
+  height: min-content;
   font-family: 'Barlow Semi Condensed', sans-serif;
   margin: auto;
   color: white;
@@ -20,13 +20,13 @@
 }
 
 .columnHeading {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 #addressColumn {
   display: flex;
   flex-direction: row;
-  margin-bottom: 5%;
+  margin-bottom: 0;
 }
 
 .copyrightsContainer {
@@ -34,4 +34,8 @@
   flex-direction: row;
   height: 15%;
   justify-content: center;
+}
+
+.footerContent {
+  margin-left: 5px;
 }
