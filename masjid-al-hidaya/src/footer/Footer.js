@@ -47,7 +47,8 @@ export default function Footer() {
         <div className="linksContainer">
           <span className="columnHeading">FOLLOW US</span>
           <div id="addressColumn">
-            <FiTwitter size={ '1.5rem' }/>
+            <FiTwitter size={'1.5rem'} />
+            <AiOutlineFacebook size={'1.7rem'}/>
           </div>
         </div>
       </div>

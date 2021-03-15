@@ -24,8 +24,7 @@ export default function ControlledCarousel() {
   }
 
   const mainLogoStyle = {
-    height: '18%',
-    width: '18%'
+    width: '14%'
   }
 
   const [index, setIndex] = useState(0);
@@ -35,7 +34,7 @@ export default function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} style={myStyle}>
+    <Carousel activeIndex={index} onSelect={handleSelect} style={myStyle} fade={true}>
       <Carousel.Item style={imgStyle}>
         <img
           className="d-block w-100"
