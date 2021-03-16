@@ -9,12 +9,12 @@ function Home() {
     <div>
       <div id="carouselContainer">
           <Carousel/>
-      </div>  
-      <div id="prayersContainer">
-        <Prayers/>
       </div>
       <div id="activitiesContainer">
         <Activities/>
+      </div>
+      <div id="prayersContainer">
+        <Prayers/>
       </div>
       <div id="footerContainer">
         <Footer/>

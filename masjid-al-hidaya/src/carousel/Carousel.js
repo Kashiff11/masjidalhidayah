@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import mh3 from '../images/mh3.png';
 import mh4 from '../images/mh4.jpg';
 import mh5 from '../images/mh5.jpg';
-import mh6 from '../images/mh6.jpg';
 import mh9 from '../images/mh9.jpg';
 import mh10 from '../images/mh10.jpg';
 
@@ -24,8 +23,7 @@ export default function ControlledCarousel() {
   }
 
   const mainLogoStyle = {
-    height: '18%',
-    width: '18%'
+    width: '14%'
   }
 
   const [index, setIndex] = useState(0);
@@ -35,7 +33,7 @@ export default function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect} style={myStyle}>
+    <Carousel activeIndex={index} onSelect={handleSelect} style={myStyle} fade={true}>
       <Carousel.Item style={imgStyle}>
         <img
           className="d-block w-100"
