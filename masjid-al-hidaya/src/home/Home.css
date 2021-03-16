@@ -20,7 +20,7 @@
 }
 
 #prayersContainer {
-  height: 50vh;
+  height: fit-content;
   background-image: url(../images/mh8.jpg);
 }
 

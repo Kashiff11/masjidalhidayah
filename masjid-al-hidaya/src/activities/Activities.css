@@ -31,11 +31,11 @@
 
 #scheduleContainer {
   width: 100%;
-  height: 85%;
+  height: min-content;
   background: rgb(0, 51, 69);
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        grid-gap: 5px;
+        grid-gap: 20px;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
   margin-top: auto;
@@ -52,9 +52,7 @@
 }
 
 .classCard {
-  background-color: rgba(223,223,223,.5);
   margin: 5% 10%;
-  border-top-left-radius: 35px;
   border-bottom-right-radius: 50px;
   display: flex;
   flex-direction: column;
@@ -62,7 +60,7 @@
 }
 
 .classCardTop {
-  height: 20%;
+  height: fit-content;
   background-color: white;
   border-top-left-radius: 50px;
   display: flex;
@@ -70,7 +68,7 @@
   text-align: right;
   font-family: 'Shippori Mincho B1', serif;
   color: rgb(244,19,34);
-  font-size: 1.4rem;
+  font-size: x-large;
   padding-right: 10px;
 }
 
@@ -82,4 +80,10 @@
   justify-content: center;
   font-size: 3vh;
   font-family: 'Shippori Mincho B1', serif;
+  background-color: rgba(223,223,223,.5);
+  border-bottom-right-radius: 50px;
+}
+
+.bookName {
+  margin: 20px;
 }
