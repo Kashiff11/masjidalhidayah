@@ -56,7 +56,6 @@
   border-bottom-right-radius: 50px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .classCardTop {
@@ -86,4 +85,75 @@
 
 .bookName {
   margin: 20px;
+}
+
+@media screen and (max-width: 420px) {
+
+  #activitiesContainer {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #mxlrAnn {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Shippori Mincho B1', serif;   
+    margin: 3% 0%;
+  }
+
+  #mixlrLogo {
+    width: 40%;
+    margin: -5% 0;
+  }
+
+  #scheduleContainer {
+    width: 100%;
+    height: min-content;
+    background: rgb(0, 51, 69);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          grid-gap: 10px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  #accRtCont {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  #accTitle {
+    font-family: 'Shippori Mincho B1', serif;
+    font-size: 3vh;
+    color: rgb(244,19,34);
+  }
+
+  .classCard {
+    margin: 2.5% 6%;
+    border-bottom-right-radius: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .classCardTop {
+    font-size: 1.8vh;
+    padding-right: 20px;
+  }
+
+  .classCardBottom {
+    height: 95%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2vh;
+    border-bottom-right-radius: 0px;
+  }
+  
 }

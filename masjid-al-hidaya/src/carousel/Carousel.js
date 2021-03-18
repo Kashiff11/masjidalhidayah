@@ -10,7 +10,7 @@ import mh10 from '../images/mh10.jpg';
 export default function ControlledCarousel() {
 
   const myStyle = {
-    width: '100%',
+    width: '100vw',
     height: '100%'
   }
 
@@ -23,7 +23,7 @@ export default function ControlledCarousel() {
   }
 
   const mainLogoStyle = {
-    width: '14%'
+    width: '5.3em'
   }
 
   const [index, setIndex] = useState(0);
@@ -41,8 +41,8 @@ export default function ControlledCarousel() {
           alt="First slide"
         />
         <Carousel.Caption>
-          <img src={mh3} style={mainLogoStyle} />
-          <p className="masjidIntroBlurb">Welcome to Masjid al-Hidaayah</p>
+          <img src={mh3} style={mainLogoStyle} className='carouselLogo'/>
+          <p className="masjidIntroBlurb" style={{ fontSize: '3vh' }}>Welcome to Masjid al-Hidaayah</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={imgStyle}>
@@ -52,7 +52,7 @@ export default function ControlledCarousel() {
         />
         <Carousel.Caption>
           <h3>Our Creed</h3>
-          <p>We believe Allah alone is the Creator of all existence. He alone is worthy of worhsip in truth. 
+          <p style={{ fontSize: '2.85vh' }}>We believe Allah alone is the Creator of all existence. He alone is worthy of worhsip in truth. 
           We affirm what He and the Prophet Muhammad have affirmed from
           His beautiful names and attributes.</p>
         </Carousel.Caption>
@@ -64,8 +64,8 @@ export default function ControlledCarousel() {
         />
         <Carousel.Caption>
           <h3>Our Methodology</h3>
-          <p>We follow the path laid out by Allah the most High, explained by His Messenger Muhammad, as
-          it was understood and followed by the companions of Muhammad, and those that followed them upon righteousness.  
+          <p style={{ fontSize: '2.85vh' }}>We follow the path laid out by Allah the most High, explained by His Messenger Muhammad, as
+          it was understood and followed by the companions of Muhammad.  
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -76,8 +76,8 @@ export default function ControlledCarousel() {
         />
         <Carousel.Caption>
           <h3>Our Mission</h3>
-          <p>To establish an Islamic Center dedicated to educating Muslims and non-Muslims regarding the
-            true orthodox teachings of Islam, free of distortion, innovation, and deviation.</p>
+          <p style={{ fontSize: '2.85vh' }}>Establish an Islamic Center dedicated to educating Muslims & non-Muslims regarding the
+            true orthodox teachings of Islam, free of distortion, innovation, & deviation.</p>
         </Carousel.Caption>
       </Carousel.Item>
   </Carousel>
