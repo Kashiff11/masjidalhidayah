@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './home/Home';
 import { Link, Route, Switch } from 'react-router-dom'
@@ -6,6 +7,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 import mh3 from './images/mh3.png';
 import Lessons from './lessons/Lessons';
 import ContactForm from './contactUs/ContactForm';
+import axios from 'axios';
 
 
 function App() {
@@ -69,6 +71,22 @@ function App() {
     },
   ]
 
+  const [impAnn, setImpAnn] = useState([]);
+
+  useEffect(() => {
+    const getData = async () => {
+      const airtableURL = `https://api.airtable.com/v0/${process.env.REACT_APP_AIRTABLE_BASE}/impann`;
+      const response = await axios.get(airtableURL, {
+        headers: {
+          Authorization: `Bearer ${process.env.REACT_APP_AIRTABLE_KEY}`
+        }
+      });
+      setImpAnn(response.data.records)
+    };
+    getData();
+  }, []);
+  console.log(impAnn)
+
   return (
     <div className="App">
       <Navbar collapseOnSelect expand="lg" bg="blue" variant="dark" fixed="top" className='color-nav'>
@@ -112,7 +130,7 @@ function App() {
         </Navbar.Collapse>
       </Navbar>
       <Switch>
-        <Route exact path="/"><Home /></Route>
+        <Route exact path="/"><Home impAnn={impAnn}/></Route>
         <Route path='/lessons'><Lessons activities={activities} /></Route>
         <Route path='/contactus'><ContactForm activities={activities} /></Route>
       </Switch>

@@ -11,7 +11,6 @@ export default function Prayers() {
       const currentTimeURL = `http://api.aladhan.com/v1/timingsByAddress?address=Baltimore`;
       const response = await axios.get(currentTimeURL);
       setPrayers(response.data)
-      console.log(response.data.data.date.hijri.date)
     };
     getData();
   }, []);

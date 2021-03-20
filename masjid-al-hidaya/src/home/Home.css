@@ -34,3 +34,13 @@
   height: min-content;
   background: rgb(0, 51, 69)
 }
+
+.display {
+  background: rgb(252,5,32);
+  font-family: 'Shippori Mincho B1', serif;
+  color: white;
+}
+
+.noDisplay {
+  display: none;
+}
