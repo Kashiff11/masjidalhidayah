@@ -26,7 +26,7 @@ export default function Prayers() {
       timeValue= "" + hours;
     } else if (hours > 12) {
       timeValue= "" + (hours - 12);
-    } else if (hours == 0) {
+    } else if (hours === 0) {
       timeValue= "12";
     }
 
@@ -48,7 +48,7 @@ export default function Prayers() {
       hours = hours;
     } else if (hours > 12) {
       hours = hours - 12;
-    } else if (hours == 0) {
+    } else if (hours === 0) {
       hours = 12;
     }
 

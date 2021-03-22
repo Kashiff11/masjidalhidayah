@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import Home from './home/Home';
+import Masjid from './masjid/Masjid'
+import Donations from './donations/Donations'
 import { Link, Route, Switch } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Nav } from 'react-bootstrap';
@@ -85,7 +87,6 @@ function App() {
     };
     getData();
   }, []);
-  console.log(impAnn)
 
   return (
     <div className="App">
@@ -107,12 +108,12 @@ function App() {
               </Link>
             </div>
             <div className="linkContainer">
-              <Link to="/">
+              <Link to="/masjid">
                 <h5 className="navbarChoice">Masjid</h5>
               </Link>
             </div>
             <div className="linkContainer">
-              <Link to="/">
+              <Link to="/donations">
                 <h5 className="navbarChoice">Donations</h5>
               </Link>
             </div>
@@ -132,7 +133,9 @@ function App() {
       <Switch>
         <Route exact path="/"><Home impAnn={impAnn}/></Route>
         <Route path='/lessons'><Lessons activities={activities} /></Route>
-        <Route path='/contactus'><ContactForm activities={activities} /></Route>
+        <Route path='/contactus'><ContactForm /></Route>
+        <Route path='/masjid'><Masjid /></Route>
+        <Route path='/donations'><Donations /></Route>
       </Switch>
     </div>
   );
