@@ -11,7 +11,6 @@ export default function Prayers() {
       const currentTimeURL = `http://api.aladhan.com/v1/timingsByAddress?address=Baltimore`;
       const response = await axios.get(currentTimeURL);
       setPrayers(response.data)
-      console.log(response.data.data.date.hijri.date)
     };
     getData();
   }, []);
@@ -27,7 +26,7 @@ export default function Prayers() {
       timeValue= "" + hours;
     } else if (hours > 12) {
       timeValue= "" + (hours - 12);
-    } else if (hours == 0) {
+    } else if (hours === 0) {
       timeValue= "12";
     }
 
@@ -49,7 +48,7 @@ export default function Prayers() {
       hours = hours;
     } else if (hours > 12) {
       hours = hours - 12;
-    } else if (hours == 0) {
+    } else if (hours === 0) {
       hours = 12;
     }
 
@@ -83,74 +82,74 @@ export default function Prayers() {
   return (
     <div id="mainPrayers">
       <div id="prayerTitle">
-        <h3>Salah Timings for</h3>
-        <h2>{prayers.data && hijriDate(prayers.data.date.hijri.date)}/{prayers.data && prayers.data.date.readable}</h2>
+        <h3 className='prayerName2'>Salah Timings for</h3>
+        <h2 className='prayerName2'>{prayers.data && hijriDate(prayers.data.date.hijri.date)}/{prayers.data && prayers.data.date.readable}</h2>
       </div>
       <div id="subPrayers">
         <div className="individualSalah">
           <div className="prayerName">
-            <h3>Fajr</h3>
+            <h3 className='prayerName2'>Fajr</h3>
           </div>
           <div className="prayerDescription">
-            <h5>Adhaan</h5>
-            <h3>{prayers.data && adjustTime(prayers.data.timings.Fajr)}</h3>
-            <h5>Iqaamah</h5>
-            <h3>{prayers.data && iqaamahTime(prayers.data.timings.Fajr, 1)}</h3>
+            <h5 className='prayerName2'>Adhaan</h5>
+            <h3 className='prayerName2'>{prayers.data && adjustTime(prayers.data.timings.Fajr)}</h3>
+            <h5 className='prayerName2'>Iqaamah</h5>
+            <h3 className='prayerName2'>{prayers.data && iqaamahTime(prayers.data.timings.Fajr, 1)}</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h3>Dhuhr</h3>
+            <h3 className='prayerName2'>Dhuhr</h3>
           </div>
           <div className="prayerDescription">
-            <h5>Adhaan</h5>
-            <h3>{prayers.data && adjustTime(prayers.data.timings.Dhuhr)}</h3>
-            <h5>Iqaamah</h5>
-            <h3>{prayers.data && iqaamahTime(prayers.data.timings.Dhuhr, 2)}</h3>
+            <h5 className='prayerName2'>Adhaan</h5>
+            <h3 className='prayerName2'>{prayers.data && adjustTime(prayers.data.timings.Dhuhr)}</h3>
+            <h5 className='prayerName2'>Iqaamah</h5>
+            <h3 className='prayerName2'>{prayers.data && iqaamahTime(prayers.data.timings.Dhuhr, 2)}</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h3>'Asr</h3>
+            <h3 className='prayerName2'>'Asr</h3>
           </div>
           <div className="prayerDescription">
-            <h5>Adhaan</h5>
-            <h3>{prayers.data && adjustTime(prayers.data.timings.Asr)}</h3>
-            <h5>Iqaamah</h5>
-            <h3>{prayers.data && iqaamahTime(prayers.data.timings.Asr, 3)}</h3>
+            <h5 className='prayerName2'>Adhaan</h5>
+            <h3 className='prayerName2'>{prayers.data && adjustTime(prayers.data.timings.Asr)}</h3>
+            <h5 className='prayerName2'>Iqaamah</h5>
+            <h3 className='prayerName2'>{prayers.data && iqaamahTime(prayers.data.timings.Asr, 3)}</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h3>Maghrib</h3>
+            <h3 className='prayerName2'>Maghrib</h3>
           </div>
           <div className="prayerDescription">
-            <h5>Adhaan</h5>
-            <h3>{prayers.data && adjustTime(prayers.data.timings.Maghrib)}</h3>
-            <h5>Iqaamah</h5>
-            <h3>{prayers.data && iqaamahTime(prayers.data.timings.Maghrib, 4)}</h3>
+            <h5 className='prayerName2'>Adhaan</h5>
+            <h3 className='prayerName2'>{prayers.data && adjustTime(prayers.data.timings.Maghrib)}</h3>
+            <h5 className='prayerName2'>Iqaamah</h5>
+            <h3 className='prayerName2'>{prayers.data && iqaamahTime(prayers.data.timings.Maghrib, 4)}</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h3>'Isha</h3>
+            <h3 className='prayerName2'>'Isha</h3>
           </div>
           <div className="prayerDescription">
-            <h5>Adhaan</h5>
-            <h3>{prayers.data && adjustTime(prayers.data.timings.Isha)}</h3>
-            <h5>Iqaamah</h5>
-            <h3>{prayers.data && iqaamahTime(prayers.data.timings.Isha, 5)}</h3>
+            <h5 className='prayerName2'>Adhaan</h5>
+            <h3 className='prayerName2'>{prayers.data && adjustTime(prayers.data.timings.Isha)}</h3>
+            <h5 className='prayerName2'>Iqaamah</h5>
+            <h3 className='prayerName2'>{prayers.data && iqaamahTime(prayers.data.timings.Isha, 5)}</h3>
           </div>
         </div>
         <div className="individualSalah">
           <div className="prayerName">
-            <h3>Jumu'ah</h3>
+            <h3 className='prayerName2'>Jumu'ah</h3>
           </div>
           <div className="prayerDescription">
-            <h5>Adhaan</h5>
-            <h3>{prayers.data && adjustTime(prayers.data.timings.Dhuhr)}</h3>
-            <h5>Iqaamah</h5>
-            <h3>1:30 PM</h3>
+            <h5 className='prayerName2'>Adhaan</h5>
+            <h3 className='prayerName2'>{prayers.data && adjustTime(prayers.data.timings.Dhuhr)}</h3>
+            <h5 className='prayerName2'>Iqaamah</h5>
+            <h3 className='prayerName2'>1:30 PM</h3>
           </div>
         </div>
       </div>

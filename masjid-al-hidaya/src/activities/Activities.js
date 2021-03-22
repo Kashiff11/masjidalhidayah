@@ -1,5 +1,8 @@
 import './Activities.css';
-import mixlrlogo from '../images/mixlrlogo.png';
+import Mixlr from '../mixlr/Mixlr'
+import Card from 'react-bootstrap/Card';
+import name from '../images/name.png';
+import Button from 'react-bootstrap/Button';
 
 export default function Activities() {
 
@@ -58,24 +61,33 @@ export default function Activities() {
   return (
     <div id="activitiesContainer">
       <div id="mxlrAnn">
+        <div id="mxlrAnnInner">
         <span id="accTitle">Lessons and Activities</span>
-        <img src={mixlrlogo} id="mixlrLogo" />
-        <span id='mixlrBlurb'>
-          Lessons are broadcasted on Masjid al-Hidaayah's Mixlr channel.
-          Can't join us at the masjid? Join us online! Click on a lesson for more information.
-        </span>
+        {/* <span id='mixlrBlurb'>
+            Lessons are broadcasted on Masjid al-Hidaayah's Mixlr channel.
+            Can't join us at the masjid? Join us online! Click on a lesson for more information.
+        </span> */}
+        <Mixlr/>  
+        </div>
       </div>
       <div id="accRtCont">
         <div id="scheduleContainer">
-          {activities.map((activity) => 
-            <div className="classCard">
-              <div className='classCardTop'>
-                <span>{activity.day}</span>
-              </div>
-              <div className='classCardBottom'>
-                <span className="bookName">{activity.topic}</span>
-              </div>
-            </div>  
+          {activities.map((activity) =>
+            <Card className='classCard'>
+              <Card.Img variant="top" src={name } />
+            <Card.Body>
+              <Card.Title>{ activity.topic  }</Card.Title>
+              <Button variant="outline-primary">Lesson Details</Button>
+            </Card.Body>
+          </Card>
+            // <div className="classCard">
+            //   <div className='classCardTop'>
+            //     <span>{activity.day}</span>
+            //   </div>
+            //   <div className='classCardBottom'>
+            //     <span className="bookName">{activity.topic}</span>
+            //   </div>
+            // </div>  
           )}
         </div>
       </div>

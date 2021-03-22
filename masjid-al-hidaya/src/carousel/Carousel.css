@@ -1,0 +1,13 @@
+@media screen and (max-width: 420px) {
+  .carouselLogo {
+    width: 50%;
+  }
+
+  #carousel-caption {
+    font-size: small;
+  }
+
+  .cCaption {
+    font-size: x-small;
+  }
+}

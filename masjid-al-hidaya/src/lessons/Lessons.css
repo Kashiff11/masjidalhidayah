@@ -1,0 +1,70 @@
+.lessonsContainer {
+  background: white;
+  margin-top: 20vh;
+  font-family: 'Shippori Mincho B1', serif;
+}
+
+.singleLessonContainer {
+  margin: 5%;
+  height: fit-content;
+  background-image: url(../images/bg1.png);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.lessonImage {
+  height: 50vh;
+}
+
+.topic {
+  font-size: 5vh;
+  font-weight: bolder;
+}
+
+.teacherDayTime {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+}
+
+.teacherDayTime2 {
+  display: flex;
+  flex-direction: row;
+  font-size: large;
+}
+
+.description {
+  font-size: 3vh;
+  margin: 0 5%;
+}
+
+@media screen and (max-width: 420px) {
+  .singleLessonContainer {
+    margin: 5% 0;
+    flex-direction: column;
+  }
+
+  .lessonImage {
+    height: 25vh;
+  }
+
+  .teacherDayTime {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+  }
+
+  .topic {
+    font-size: 4vh;
+  }
+
+  .teacherDayTime2 {
+    font-size: 2vh;
+  }
+
+  .description {
+    font-size: 2.2vh;
+    margin: 0 2%;
+  }
+}

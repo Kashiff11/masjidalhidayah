@@ -1,7 +1,7 @@
 #carouselContainer {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 100vw;
   height: 40vh;
   background-color:  rgb(223,223,223);
   margin-top: 13vh;
@@ -26,10 +26,21 @@
 
 #activitiesContainer {
   height: 100vh;
+  width: 100vw;
   background: rgb(223,223,223)
 }
 
 #footerContainer {
   height: min-content;
   background: rgb(0, 51, 69)
+}
+
+.display {
+  background: rgb(252,5,32);
+  font-family: 'Shippori Mincho B1', serif;
+  color: white;
+}
+
+.noDisplay {
+  display: none;
 }

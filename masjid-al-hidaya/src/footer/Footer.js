@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     
     <div className='footerContainer'>
-      <div className = "mainLinksContainer">
+      <div className="mainLinksContainer">
         <div className="linksContainer">
           <span className="columnHeading">QUICK LINKS</span>
           <div id="addressColumn">

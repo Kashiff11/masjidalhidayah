@@ -4,11 +4,14 @@ import Prayers from '../prayers/Prayers';
 import Activities from '../activities/Activities';
 import Footer from '../footer/Footer'
 
-function Home() {
+function Home(props) {
   return (
     <div>
       <div id="carouselContainer">
           <Carousel/>
+      </div>
+      <div className={props.impAnn.length > 0 ? 'display' : 'noDisplay'}>
+        <span><strong>Important Announcement for {props.impAnn[0] && props.impAnn[0].fields.Date}</strong><br/>{props.impAnn[0] && props.impAnn[0].fields.Name}</span>
       </div>
       <div id="activitiesContainer">
         <Activities/>
